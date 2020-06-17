@@ -1,9 +1,7 @@
 import React,  {useState} from 'react';
-import logo from './logo.svg';
-import './App.css';
-import './wow.css';
 
-function App(props) {
+import './Room.css'
+function Room(props) {
   
 let [islit, setlit] = useState(false)
   function toggleLit(){
@@ -14,12 +12,12 @@ let [Age, setAge] = useState(22)
     setAge(++Age)
   }
   return (
-    <div className="App">
-      <p>Alhamdulilah , its been working </p>
+    <div className={`room ${islit ? "lit" : "dark"}`} >
+      <p>Alhamdulilah , wow its been working </p>
         <p >
          city is : {props.city}
         </p>
-        <p> The room is : {islit? 'light':'dark'} </p>
+        <p > The room is : {islit? 'light':'dark'} </p>
         <button onClick={()=> setlit(!islit)}> Toggle lit</button>
         <h2>The age is : {Age}</h2>
         <button onClick={()=>{
@@ -29,4 +27,4 @@ let [Age, setAge] = useState(22)
   );
 }
 
-export default App;
+export default Room;
