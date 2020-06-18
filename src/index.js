@@ -2,11 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './wow.css'
 import Room from './Room'
+import App from './App'
 function Hi(props){
 
   return <div className="heading"> Marhaba {props.name} <br></br>
         {props.age+2}
-        <Room city="Makkah"/>
+        <App></App>
 
           </div>
 }
