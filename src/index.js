@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
 import './wow.css'
 import Room from './Room'
 function Hi(props){

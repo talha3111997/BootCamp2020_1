@@ -4,13 +4,9 @@ import './Room.css'
 function Room(props) {
   
 let [islit, setlit] = useState(false)
-  function toggleLit(){
-    setlit(!islit)
-  }
+  
 let [Age, setAge] = useState(22)
-  const increaseAge = ()=>{
-    setAge(++Age)
-  }
+  
   return (
     <div className={`room ${islit ? "lit" : "dark"}`} >
       <p>Alhamdulilah , wow its been working </p>
