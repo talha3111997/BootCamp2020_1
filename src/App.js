@@ -2,16 +2,17 @@ import React, {useState}  from 'react';
 import './App.css';
 import './wow.css';
 import Parent from './Parent'
-
+import ValueContest from './ValueContest'
 function App(props) {
-  let [number, setNumber] = useState(50)
+ let value= useState(60)
   return (
+    <ValueContest.Provider value={value}>
     <div className="App">
       <header className="App-header">
-      <Parent num={number}></Parent>
-      <button onClick={()=>{setNumber(++number)}}>Update number</button>
+      <Parent ></Parent>
       </header>
     </div>
+    </ValueContest.Provider>
   );
 }
 

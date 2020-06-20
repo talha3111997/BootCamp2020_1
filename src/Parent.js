@@ -2,10 +2,10 @@ import React from 'react';
 import './App.css';
 import './wow.css';
 import Child from './Child'
-function Parent(props) {
+function Parent() {
   return (
     <div className="App">
-      <Child childNum={props.num}></Child>
+      <Child ></Child>
     </div>
   );
 }
